@@ -53,6 +53,19 @@ python -m file_encryption_tool.cli decrypt <encrypted_file_path> -o <decrypted_f
 
 ---
 
+### 🖼️ Screenshot: Example Usage
+
+![Preview](./Preview.png)
+
+This screenshot demonstrates the full usage workflow:
+- Repository clone  
+- Dependency installation  
+- Key generation  
+- File encryption  
+- File decryption
+
+---
+
 ## 🛠️ Advanced Features
 - **🔄 Custom Output Filenames**: Tailor your encrypted and decrypted filenames.
 - **🔑 Secure Key Management**: Keep your encryption keys safe—if lost, the files are unrecoverable.
@@ -69,13 +82,14 @@ File-Encryption-Tool/
 │   └── utils.py
 ├── tests/
 │   └── test_encryption.py
+├── Preview.png
 ├── README.md
 └── setup.py
 ```
 
 ---
 
-## 🧑‍💻 Tech Stack
+## 👨‍💻 Tech Stack
 - **Python 3.8+**: The backbone of this tool.
 - **cryptography**: Secure your files with **Fernet encryption**.
 - **pytest**: Test your tool for smooth functionality.
