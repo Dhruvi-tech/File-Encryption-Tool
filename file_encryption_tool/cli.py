@@ -4,6 +4,7 @@ from file_encryption_tool.decrypt import decrypt_file
 from file_encryption_tool.key_generator import generate_key, load_key
 
 
+
 def main():
     parser = argparse.ArgumentParser(description="File Encryption/Decryption Tool")
     subparsers = parser.add_subparsers(dest="command", required=True)
