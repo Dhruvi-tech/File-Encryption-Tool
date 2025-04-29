@@ -1,7 +1,8 @@
 import argparse
-from file_encryption_tool.key_manager import generate_key, load_key
-from file_encryption_tool.encryptor import encrypt_file
-from file_encryption_tool.decryptor import decrypt_file
+from file_encryption_tool.encrypt import encrypt_file
+from file_encryption_tool.decrypt import decrypt_file
+from file_encryption_tool.key_generator import generate_key, load_key
+
 
 def main():
     parser = argparse.ArgumentParser(description="File Encryption/Decryption Tool")
