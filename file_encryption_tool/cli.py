@@ -1,22 +1,23 @@
 import argparse
 from file_encryption_tool.encrypt import encrypt_file
 from file_encryption_tool.decrypt import decrypt_file
-from file_encryption_tool.key_generator import generate_key, load_key
-
-
+from file_encryption_tool.key_manager import generate_key, load_key  # Updated import
 
 def main():
     parser = argparse.ArgumentParser(description="File Encryption/Decryption Tool")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
+    # Subparser for key generation
     gen_parser = subparsers.add_parser("generate-key", help="Generate a secret key")
     gen_parser.add_argument("-o", "--output", default="secret.key", help="Path to save the generated key")
 
+    # Subparser for encryption
     enc_parser = subparsers.add_parser("encrypt", help="Encrypt a file")
     enc_parser.add_argument("input", help="Input file path to encrypt")
     enc_parser.add_argument("-o", "--output", help="Encrypted file output path (default: <input>.enc)")
     enc_parser.add_argument("-k", "--key", default="secret.key", help="Path to the secret key file")
 
+    # Subparser for decryption
     dec_parser = subparsers.add_parser("decrypt", help="Decrypt a file")
     dec_parser.add_argument("input", help="Encrypted file path (.enc)")
     dec_parser.add_argument("-o", "--output", help="Decrypted file output path (default: replace .enc with _decrypted)")
