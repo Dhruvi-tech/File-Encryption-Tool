@@ -10,7 +10,7 @@ def encrypt_file(input_path: str, output_path: str, key: bytes) -> None:
         f_out.write(encrypted)
 if __name__ == "__main__":
     import argparse
-    from key_generator import load_key  # adjust import if needed
+    from key_generator import load_key  # Adjust the import path as necessary
 
     parser = argparse.ArgumentParser(description="Encrypt a file.")
     parser.add_argument("input_file", help="Path to the file to encrypt")
@@ -23,3 +23,4 @@ if __name__ == "__main__":
 
     from file_encryption_tool.encrypt import encrypt_file
     encrypt_file(args.input_file, key, args.output_file)
+
