@@ -128,12 +128,11 @@ File-Encryption-Tool/
 
 4. Encrypt your file:
    ```bash
-   python -m file_encryption_tool.cli encrypt <file_path> -o <encrypted_file_path> -k mykey.key
-   ```
+   python -m file_encryption_tool.cli encrypt <file_path> -o <encrypted_file_path> -k mykey.key [--password yourpassword]
 
 5. Decrypt your file:
    ```bash
-   python -m file_encryption_tool.cli decrypt <encrypted_file_path> -o <decrypted_file_path> -k mykey.key
+   python -m file_encryption_tool.cli decrypt <encrypted_file_path> -o <decrypted_file_path> -k mykey.key [--password yourpassword]
    ```
 
 ---
