@@ -67,7 +67,7 @@ python -m file_encryption_tool.cli decrypt <encrypted_file_path> -o <decrypted_f
 
 ### 🖼️ Screenshot: Example Usage
 
-![Preview](./Preview.png)
+![Preview](https://your-image-url.com/photo.png)
 
 This screenshot demonstrates the full usage workflow:
 - Repository clone  
