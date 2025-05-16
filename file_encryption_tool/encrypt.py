@@ -7,3 +7,4 @@ def encrypt_file(input_path, output_path, key):
     encrypted_data = fernet.encrypt(data)
     with open(output_path, "wb") as file:
         file.write(encrypted_data)
+
